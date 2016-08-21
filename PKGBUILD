@@ -1,5 +1,5 @@
 pkgname=arduino
-pkgver=1.6.10
+pkgver=1.6.11
 pkgrel=1
 pkgdesc="Arduino prototyping platform SDK"
 arch=( 'x86_64')
@@ -12,7 +12,7 @@ install="arduino.install"
 source=('arduino.desktop'
         "http://downloads.arduino.cc/arduino-${pkgver}-linux64.tar.xz")
 md5sums=('df1f245d0455bd8f7bb3ffba6a375332'
-         '8c8ecae5c1017c40e314d8deafa8a330')
+         'ec94d0baaa44a3271711356829810002')
 options=(!strip)
 package() {
   rm -f $srcdir/arduino-${pkgver}/hardware/tools/avr/bin/{avrdude,avrdude_bin}
