@@ -1,5 +1,5 @@
 pkgname=arduino
-pkgver=1.6.11
+pkgver=1.8.0
 pkgrel=1
 pkgdesc="Arduino prototyping platform SDK"
 arch=( 'x86_64')
@@ -10,9 +10,9 @@ license=('LGPL')
 depends=('java-environment' 'gtk2' 'desktop-file-utils' 'giflib' 'avrdude-svn' 'libusb-compat' )
 install="arduino.install"
 source=('arduino.desktop'
-        "http://downloads.arduino.cc/arduino-${pkgver}-linux64.tar.xz")
+        "http://download.arduino.org/IDE/1.8.0/arduino-${pkgver}-linux64.tar.xz")
 md5sums=('df1f245d0455bd8f7bb3ffba6a375332'
-         'ec94d0baaa44a3271711356829810002')
+         '3ed4bc1cc89407623cc849de3a07c409')
 options=(!strip)
 package() {
   rm -f $srcdir/arduino-${pkgver}/hardware/tools/avr/bin/{avrdude,avrdude_bin}
